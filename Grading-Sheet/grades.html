@@ -18,6 +18,7 @@
             <hr class="school-line"> 
             <p class="school-year">School Year 2123</p>
         </div>
+
         <div class="grade-dropdown-container">
             <div class="grade-dropdown">
                 <select id="grade-level" onchange="changeGradeLevel()">
@@ -30,183 +31,185 @@
                 <button onclick="showSemester(2)">2nd Semester</button>
             </div>
         </div>
-        <table id="grade-11-semester-1" class="active">
-            <thead>
-                <tr>
-                    <th>Subjects</th>
-                    <th>Quarter 1</th>
-                    <th>Quarter 2</th>
-                    <th>Semester Final Grade</th>
-                    <th>Remarks</th>
-                </tr>
-            </thead>
-            <tbody>
+
+        <div class="table-container">
+            <table id="grade-11-semester-1" class="active">
+                <thead>
+                    <tr>
+                        <th>Subjects</th>
+                        <th>Quarter 1</th>
+                        <th>Quarter 2</th>
+                        <th>Semester Final Grade</th>
+                        <th>Remarks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="specialized-row">
+                        <td colspan="5">Core Subjects</td>
+                    </tr>
+                    <tr>
+                        <td>Personal Development</td>
+                        <td>84</td>
+                        <td>90</td>
+                        <td>87</td>
+                        <td class="remarks">PASSED</td>
+                    </tr>
+                    <tr>
+                        <td>Earth and Life Science</td>
+                        <td>88</td>
+                        <td>87</td>
+                        <td>88</td>
+                        <td class="remarks">PASSED</td>
+                    </tr>
+                    <tr>
+                        <td>21st Century Literature</td>
+                        <td>80</td>
+                        <td>88</td>
+                        <td>84</td>
+                        <td class="remarks">PASSED</td>
+                    </tr>
+                    <tr>
+                        <td>Oral Communication</td>
+                        <td>82</td>
+                        <td>85</td>
+                        <td>84</td>
+                        <td class="remarks">PASSED</td>
+                    </tr>
+                    <tr>
+                        <td>General Mathematics</td>
+                        <td>80</td>
+                        <td>88</td>
+                        <td>84</td>
+                        <td class="remarks">PASSED</td>
+                    </tr>
+                    <tr>
+                        <td>Physical Education and Health 1</td>
+                        <td>82</td>
+                        <td>92</td>
+                        <td>87</td>
+                        <td class="remarks">PASSED</td>
+                    </tr>
+                    <tr>
+                        <td>Filipino 1</td>
+                        <td>81</td>
+                        <td>98</td>
+                        <td>90</td>
+                        <td class="remarks">PASSED</td>
+                    </tr>
+                    <tr class="specialized-row">
+                        <td colspan="5">Specialized Subjects</td>
+                    </tr>
+                    <tr>
+                        <td>Major 1</td>
+                        <td>85</td>
+                        <td>90</td>
+                        <td>88</td>
+                        <td class="remarks">PASSED</td>
+                    </tr>
+                    <tr>
+                        <td>Major 2</td>
+                        <td>85</td>
+                        <td>90</td>
+                        <td>88</td>
+                        <td class="remarks">PASSED</td>
+                    </tr>
+                    <tr class="general-average">
+                        <td colspan="3">General Average for the Semester</td>
+                        <td>86.50</td>
+                        <td>PASSED</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table id="grade-11-semester-2">
+                <thead>
+                    <tr>
+                        <th>Subjects</th>
+                        <th>Quarter 1</th>
+                        <th>Quarter 2</th>
+                        <th>Semester Final Grade</th>
+                        <th>Remarks</th>
+                    </tr>
+                </thead>
                 <tr class="specialized-row">
                     <td colspan="5">Core Subjects</td>
                 </tr>
-                <tr>
-                    <td>Personal Development</td>
-                    <td>84</td>
-                    <td>90</td>
-                    <td>87</td>
-                    <td class="remarks">PASSED</td>
-                </tr>
-                <tr>
-                    <td>Earth and Life Science</td>
-                    <td>88</td>
-                    <td>87</td>
-                    <td>88</td>
-                    <td class="remarks">PASSED</td>
-                </tr>
-                <tr>
-                    <td>21st Century Literature</td>
-                    <td>80</td>
-                    <td>88</td>
-                    <td>84</td>
-                    <td class="remarks">PASSED</td>
-                </tr>
-                <tr>
-                    <td>Oral Communication</td>
-                    <td>82</td>
-                    <td>85</td>
-                    <td>84</td>
-                    <td class="remarks">PASSED</td>
-                </tr>
-                <tr>
-                    <td>General Mathematics</td>
-                    <td>80</td>
-                    <td>88</td>
-                    <td>84</td>
-                    <td class="remarks">PASSED</td>
-                </tr>
-                <tr>
-                    <td>Physical Education and Health 1</td>
-                    <td>82</td>
-                    <td>92</td>
-                    <td>87</td>
-                    <td class="remarks">PASSED</td>
-                </tr>
-                <tr>
-                    <td>Filipino 1</td>
-                    <td>81</td>
-                    <td>98</td>
-                    <td>90</td>
-                    <td class="remarks">PASSED</td>
-                </tr>
-                <tr class="specialized-row">
-                    <td colspan="5">Specialized Subjects</td>
-                </tr>
-                <tr>
-                    <td>Major 1</td>
-                    <td>85</td>
-                    <td>90</td>
-                    <td>88</td>
-                    <td class="remarks">PASSED</td>
-                </tr>
-                <tr>
-                    <td>Major 2</td>
-                    <td>85</td>
-                    <td>90</td>
-                    <td>88</td>
-                    <td class="remarks">PASSED</td>
-                </tr>
-                <tr class="general-average">
-                    <td colspan="3">General Average for the Semester</td>
-                    <td>86.50</td>
-                    <td>PASSED</td>
-                </tr>
-            </tbody>
-        </table>
-        <table id="grade-11-semester-2">
-            <thead>
-                <tr>
-                    <th>Subjects</th>
-                    <th>Quarter 1</th>
-                    <th>Quarter 2</th>
-                    <th>Semester Final Grade</th>
-                    <th>Remarks</th>
-                </tr>
-            </thead>
-            <tr class="specialized-row">
-                <td colspan="5">Core Subjects</td>
-            </tr>
-            <tbody>
-                <tr>
-                    <td>Reading and Writing</td>
-                    <td>84</td>
-                    <td>91</td>
-                    <td>88</td>
-                    <td class="remarks">PASSED</td>
-                </tr>
-                <tr>
-                    <td>Statistics and Probability</td>
-                    <td>82</td>
-                    <td>94</td>
-                    <td>88</td>
-                    <td class="remarks">PASSED</td>
-                </tr>
-                <tr>
-                    <td>Pagbabasa at Pagsusuri ng iba't ibang Teksto Tungo sa Pananaliksik</td>
-                    <td>84</td>
-                    <td>95</td>
-                    <td>92</td>
-                    <td class="remarks">PASSED</td>
-                </tr>
-                <tr>
-                    <td>Physical Education and Health 2</td>
-                    <td>77</td>
-                    <td>95</td>
-                    <td>86</td>
-                    <td class="remarks">PASSED</td>
-                </tr>
-                <tr class="specialized-row">
-                    <td colspan="5">Applied Subjects</td>
-                </tr>
-                <tr>
-                    <td>Practical Research 1</td>
-                    <td>94</td>
-                    <td>94</td>
-                    <td>94</td>
-                    <td class="remarks">PASSED</td>
-                </tr>
-                <tr>
-                    <td>English for Academic and Professional Purposes</td>
-                    <td>90</td>
-                    <td>88</td>
-                    <td>89</td>
-                    <td class="remarks">PASSED</td>
-                </tr>
-                <tr>
-                    <td>Empowerment Technologies (for strand)</td>
-                    <td>94</td>
-                    <td>92</td>
-                    <td>93</td>
-                    <td class="remarks">PASSED</td>
-                </tr>
-                <tr class="specialized-row">
-                    <td colspan="5">Specialized Subjects</td>
-                </tr>
-                <tr>
-                    <td>Major 3</td>
-                    <td>91</td>
-                    <td>94</td>
-                    <td>92</td>
-                    <td class="remarks">PASSED</td>
-                </tr>
-                <tr>
-                    <td>Major 4</td>
-                    <td>91</td>
-                    <td>94</td>
-                    <td>92</td>
-                    <td class="remarks">PASSED</td>
-                </tr>
-                <tr class="general-average">
-                    <td colspan="3">General Average for the Semester</td>
-                    <td>90.94</td>
-                    <td>PASSED</td>
-                </tr>
-            </tbody>
-        </table>
+                <tbody>
+                    <tr>
+                        <td>Reading and Writing</td>
+                        <td>84</td>
+                        <td>91</td>
+                        <td>88</td>
+                        <td class="remarks">PASSED</td>
+                    </tr>
+                    <tr>
+                        <td>Statistics and Probability</td>
+                        <td>82</td>
+                        <td>94</td>
+                        <td>88</td>
+                        <td class="remarks">PASSED</td>
+                    </tr>
+                    <tr>
+                        <td>Pagbabasa at Pagsusuri ng iba't ibang Teksto Tungo sa Pananaliksik</td>
+                        <td>84</td>
+                        <td>95</td>
+                        <td>92</td>
+                        <td class="remarks">PASSED</td>
+                    </tr>
+                    <tr>
+                        <td>Physical Education and Health 2</td>
+                        <td>77</td>
+                        <td>95</td>
+                        <td>86</td>
+                        <td class="remarks">PASSED</td>
+                    </tr>
+                    <tr class="specialized-row">
+                        <td colspan="5">Applied Subjects</td>
+                    </tr>
+                    <tr>
+                        <td>Practical Research 1</td>
+                        <td>94</td>
+                        <td>94</td>
+                        <td>94</td>
+                        <td class="remarks">PASSED</td>
+                    </tr>
+                    <tr>
+                        <td>English for Academic and Professional Purposes</td>
+                        <td>90</td>
+                        <td>88</td>
+                        <td>89</td>
+                        <td class="remarks">PASSED</td>
+                    </tr>
+                    <tr>
+                        <td>Empowerment Technologies (for strand)</td>
+                        <td>94</td>
+                        <td>92</td>
+                        <td>93</td>
+                        <td class="remarks">PASSED</td>
+                    </tr>
+                    <tr class="specialized-row">
+                        <td colspan="5">Specialized Subjects</td>
+                    </tr>
+                    <tr>
+                        <td>Major 3</td>
+                        <td>91</td>
+                        <td>94</td>
+                        <td>92</td>
+                        <td class="remarks">PASSED</td>
+                    </tr>
+                    <tr>
+                        <td>Major 4</td>
+                        <td>91</td>
+                        <td>94</td>
+                        <td>92</td>
+                        <td class="remarks">PASSED</td>
+                    </tr>
+                    <tr class="general-average">
+                        <td colspan="3">General Average for the Semester</td>
+                        <td>90.94</td>
+                        <td>PASSED</td>
+                    </tr>
+                </tbody>
+            </table>
 
         <table id="grade-12-semester-1" class="active">
             <thead>
@@ -374,6 +377,7 @@
                 </tr>
             </tbody>
         </table>
+    </div>
     </div>
     <script src="grades.js"></script>
 </body>
