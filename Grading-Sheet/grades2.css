@@ -62,7 +62,10 @@ body {
 }
 
 .table-container {
+    width: 100%;
+    height: 100%; 
     overflow-x: auto;
+    -webkit-overflow-scrolling: touch; 
 }
 
 table {
@@ -121,9 +124,9 @@ th {
 
 .go-to-page-btn {
     position: fixed;
-    bottom: 15px;
-    left: 15px;
-    padding: 8px 15px;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 20px;
     font-size: 16px;
     background-color: #8b0000;
     color: white;
@@ -136,7 +139,7 @@ th {
     background-color: #ff6347;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
     .header h1 {
         font-size: 18px;
     }
@@ -155,11 +158,27 @@ th {
     }
 
     .semester-buttons button {
-        width: 80%;
+        width: 50%;
+        align-self: center;
     }
 
     .go-to-page-btn {
         font-size: 12px;
         padding: 6px 12px;
+    }
+
+    .container {
+        width: 90%; 
+        max-width: none; 
+        padding: 8px; 
+        margin: 70px 0; 
+        border-radius: 12px; 
+    }
+
+    .table-container {
+        padding: 0 8px;
+        width: 93%; 
+        padding: 0 12px; 
+        margin: 15px 0;
     }
 }
